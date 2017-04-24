@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang='en-us'>
+
+
+<head>
+<title>My Amazing Title</title>
+<meta name="description" content="">
+<meta charset="utf-8">
+<style type="text/css">
+h1 {color:firebrick; font-size:60px}
+h2 {color:aqua}
+body{background-color:deepskyblue}
+div {hight: 500px; padding:55px 0;border:solid 1px black;}
+
+
+</style>
+
+</head>
+
+<body>
+
+<h1><u>Hello World</u></h1>
+
+<h2>This class is <strong>REALLY</strong> amazing</h2>
+
+<p>This is a paragraph about html and something </p>
+<div>
+<label for='phone'>Please enter your phone number to <strong>WIN!!!</strong>:
+</label><br><input type='text' id='phone'><br>
+<label for="myinfo">Please tell me your bank account number so i deposit your <strong>winnings!</strong></label><br><textarea id='myinfo' cols='55' rows='4'></textarea><br>
+<button type='button' onClick='spamTHem()'>Enter NOW!</button>
+</div>
+
+
+<!-- Comments are lame! -->
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
