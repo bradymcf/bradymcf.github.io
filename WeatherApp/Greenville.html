@@ -10,6 +10,33 @@
         @import url('https://fonts.googleapis.com/css?family=Sansita');
 
     </style>
+    <style>
+        table {
+            background-color: rgba(200, 200, 200, .6);
+            margin: .2em auto;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+    </style>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+    </style>
     <header>
         <heading><img src="/WeatherApp/Images/logo-blue.jpg" alt='feeling lucky? logo' width='400' height='99'>
             <h3>Local Weather</h3>
@@ -28,13 +55,26 @@
         </nav>
 
     </header>
-    <main>
-
-    </main>
-
 </head>
 
 <body>
+    <main>
+       <table>
+            <tr>
+                <th>Current Conditions<br><br>current</th>
+                <th>Greenville<br><br>temp</th>
+                <th>Hourly Forecast<br><br>8am<br><br>12pm</th>
+            </tr>
+           
+
+        </table>
+
+
+    </main>
+
+
+
+
 
     <footer>
         &copy;2017 Brady McFarland

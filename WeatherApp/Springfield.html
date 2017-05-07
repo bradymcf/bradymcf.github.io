@@ -7,6 +7,34 @@
     <meta name="description" content="Mobile weather page for Springfield local weather.">
     <meta name="viewport" content="width=device-width">
     <style>
+        table {
+            background-color: rgba(200, 200, 200, .6);
+            margin: .2em auto;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+    </style>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+    </style>
+
+    <style>
         @import url('https://fonts.googleapis.com/css?family=Sansita');
 
     </style>
@@ -28,18 +56,29 @@
         </nav>
 
     </header>
-    <main>
-
-    </main>
 
 </head>
 
 <body>
+    <main>
+       <table>
+            <tr>
+                <th>Current Conditions<br><br>current</th>
+                <th>Greenville<br><br>temp</th>
+                <th>Hourly Forecast<br><br>8am<br><br>12pm</th>
+            </tr>
+           
+
+        </table>
+
+    </main>
 
     <footer>
         &copy;2017 Brady McFarland
         <li><a href='index.html'>Home Page</a></li>
     </footer>
+
+
 </body>
 <style type="text/css">
     h1 {
