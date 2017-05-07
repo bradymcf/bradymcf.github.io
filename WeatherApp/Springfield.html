@@ -3,15 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home | Weather Info</title>
-    <meta name="description" content="Mobile weather page for finding local weather and weather for great places.">
+    <title>Springfield | Weather Info</title>
+    <meta name="description" content="Mobile weather page for Springfield local weather.">
     <meta name="viewport" content="width=device-width">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-   
-
-
     <style>
         @import url('https://fonts.googleapis.com/css?family=Sansita');
+
     </style>
     <header>
         <heading><img src="/WeatherApp/Images/logo-blue.jpg" alt='feeling lucky? logo' width='400' height='99'>
@@ -24,7 +21,7 @@
                     <a href="/WeatherApp/Franklin.html">Franklin</a>
                     <a href='/WeatherApp/Greenville.html'>Greenville</a>
                     <a href='/WeatherApp/Springfield.html'>Springfield</a>
-                    <a href="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js">Search</a>
+                    <a href="http://autocomplete.wunderground.com/aq?query=query">Search</a>
 
                 </ul>
             </div>
@@ -32,19 +29,7 @@
 
     </header>
     <main>
-         <script>
-        jQuery(document).ready(function($) {
-            $.ajax({
-                url: "http://api.wunderground.com/api/Your_Key/geolookup/conditions/q/IA/Cedar_Rapids.json",
-                dataType: "jsonp",
-                success: function(parsed_json) {
-                    var location = parsed_json['location']['city'];
-                    var temp_f = parsed_json['current_observation']['temp_f'];
-                    alert("Current temperature in " + location + " is: " + temp_f);
-                }
-            });
-        });
-    </script>
+
     </main>
 
 </head>
@@ -94,6 +79,7 @@
     table {
         border-collapse: collapse;
     }
+
 </style>
 <style>
     a:link {
@@ -115,6 +101,7 @@
         color: #A6D8DB;
         text-decoration: underline;
     }
+
 </style>
 
 </html>
