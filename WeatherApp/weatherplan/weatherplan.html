@@ -8,24 +8,20 @@
     <meta charset="utf-8">
     <style type="text/css">
         h1 {
-            color: firebrick;
             font-size: 60px
         }
-
+        
         h2 {
             color: aqua
         }
-
-        body {
-            background-color: deepskyblue
-        }
-
+        
+        body {}
+        
         div {
             hight: 500px;
             padding: 55px 0;
             border: solid 1px black;
         }
-
     </style>
 
 </head>
@@ -34,32 +30,76 @@
 
     <h1><u>Mobile Weather App Site Plan</u></h1>
     <h3>Purpose</h3>
-    <p>The client would like a web based weather app created. The purpose of the site is to give current weather conditions in 3 different ways.  The initial landing page will give the weather for the current location based on the Geocoding information given by the browser.  The second is weather for 3 specific locations accessible through a dedicated link, and the third is weather for any location determined by a search string.
+    <p>The client would like a web based weather app created. The purpose of the site is to give current weather conditions in 3 different ways. The initial landing page will give the weather for the current location based on the Geocoding information given by the browser. The second is weather for 3 specific locations accessible through a dedicated link, and the third is weather for any location determined by a search string.
 
     </p>
     <br>
     <br>
     <h3>Audience</h3>
-    <p>Primary audience is adults ages 18-30.  Most will be students.  Access to the site will be split between mobile devices and laptops.</p>
-    <h5>Audience Goals:</h5>
-    <p>College students move around quite a bit so one goal would be to quickly get the weather conditions for their current location as they head off to class or study. They are also often far from their homes so the ability to quickly get the conditions for a specific location is important as well.  The third goal deals with planning for travels...the ability to get weather conditions for any location will help with last minute packing for road trips.
+    <p>Primary audience is adults ages 18-30. Most will be students. Access to the site will be split between mobile devices and laptops.</p>
+    <h4>Audience Goals:</h4>
+    <p>College students move around quite a bit so one goal would be to quickly get the weather conditions for their current location as they head off to class or study. They are also often far from their homes so the ability to quickly get the conditions for a specific location is important as well. The third goal deals with planning for travels...the ability to get weather conditions for any location will help with last minute packing for road trips.
 
     </p>
     <br>
     <br>
     <h3>Personas</h3>
-    <img src=
+    <img src='Untitled.png' alt='Personas' width='335' height='454'>
 
 
-    <p> </p>
+    <p>
+        &emsp;&emsp; ⦁ <b>Name</b>: Joe Cool<br> &emsp;&emsp; ⦁ <b>Occupation</b>: student<br> &emsp;&emsp; ⦁ <b>Age</b>: undetermined<br> &emsp;&emsp; ⦁ <b>Interests</b>: Traveling, seeing new things<br> &emsp;&emsp; ⦁ <b>Motivation</b>: Joe is not into planning. His last minute scrambling, whether it is getting to class in the morning or heading out on his latest adventure, has left him unprepared for weather conditions many times (He is tired of sleeping in the rain and snow). He would like to be more prepared...without having to put much effort into it...or planning.<br> &emsp;&emsp; ⦁ <b>Environment</b>: Joe is comfortable using laptops and Mobile devices, he will most often be found on a smart phone however. Many of the places he frequents do not have great signal…he is often dealing with 3G speeds<br>
+    </p>
 
+    <img src='Girl.png' alt='Personas' width='458' height='527'>
+    <p>
+        &emsp;&emsp;⦁ <b>Name</b>: Lucy van Pelt<br> &emsp;&emsp;⦁ <b>Occupation</b>: student<br> &emsp;&emsp;⦁ <b>Age</b>: 18<br> &emsp;&emsp;⦁ <b>Interests</b>: Giving advice, Psychology<br> &emsp;&emsp;⦁ <b>Motivation</b>: Lucy is a no nonsense young lady who likes to help those around her. She wants easy access to the weather conditions for many locations so that she can always be prepared to offer some unsolicited advice to her peers.<br> &emsp;&emsp;⦁ <b>Environment</b>: Lucy has a smart phone that she uses to keep her eye on her social media ‘friends’. She is usually not very far from her trusty laptop however. Most of her time online is spent either on the University network or the apartment broadband.<br>
+    </p>
 
+    <h3>Content</h3>
+    <p>All weather pages should include Location name, temperature, high, low, current weather descriptor, precipitation, and wind on small, and hourly temps should be added on larger screens. (See provided weather data file for more details)</p>
+    <h4>pages</h4>
+    <p>
+        &emsp;&emsp;⦁ <b>Home</b>: weather for the current location. Current location should be determined by using the Geolocation API of the browser. This information should be passed to the WeatherUnderground API (https://www.wunderground.com/weather/api/) to retrieve the current conditions.<br> &emsp;&emsp;⦁ <b>Franklin, Greenville, Springfield</b>: weather for each specific location. The weather for The Franklin and Greenville pages should be pulled from a local JSON file that will be provided.<br> &emsp;&emsp;⦁ <b>Search</b>: Begins with only a search box, characters entered will cause a list of suggested matches to appear. Selected location will pull up the weather. The search term from the field should be sent to the WeatherUnderground autocomplete API (https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api&MR=1), and the results used to pull the current conditions for the selected location.<br>
 
-    <!-- Comments are lame! -->
+    </p>
+    <h3>styles</h3>
+    <h4>Branding</h4>
+    <pre>The client provided the following initial concept for a name and logo: (You recognize that this logo could easily be re-created entirely with CSS using the right font and HTML entities… &#9856;  &#9861;)</pre>
+    <img src='logo.png' alt='Logo' width='563' height='140'>
+    <h4>Typhogrophy</h4>
+    <p>The client also expressed interest in the following fonts:<br> &emsp;&emsp;
 
+        <b>Heading Font</b>: Sansita From Google Fonts:<br><img src='font.PNG' alt='Fonts' width='424' height='167'><br> &emsp;&emsp;
+        <b>Body Copy Font</b>: Helvetica<br>
+        <img src="fontdescrp.PNG" alt='description' width='589' height='139'>
+    </p>
 
+    <h4>Colors</h4>
+    <img src="colors.PNG" alt='colors' width='599' height='96'>
+    <br>
+    <h4>Elements</h4>
+    <p>(add usability note on each element)</p>
+    <h4>Navigation:</h4>
+    <p><img src='Headder.PNG' alt='current' width='555' height='45'><br>
+        <u>Link:normal</u> : #4A4653<br>
+        <u>Link:visited</u> : #4A4653<br>
+        <u>Link:hover</u>: #E7EF61<br>
+        <u>Link:active</u> : #A6D8DB<br>
+        <b>Opaque rounded content box:</b><br>
+        <img src='we.png' alt='weather' width='507' height='209'><br> background-color: rgba(200,200,200,.6);<br> margin: .2em auto;<br> border: 1px solid;<br> border-radius: 5px;<br>
 
+    </p>
+    <h3>Wireframes</h3><br>
+    <h4>Small Screen</h4>
+    <img src='mobile.png' alt='mobile' width='672' height='1112'><br><br>
+    <h4>Large Screen</h4>
+    <img src="wireframe.png" alt='wireframe' width='900' height='620'><br><br>
 
+    <footer>
+
+        <a href='index.html'>Link to Homepage</a><br> &copy; 2017 Brady McFarland
+    </footer>
 </body>
 
 
