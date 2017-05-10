@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Home | Weather Info</title>
     <meta name="description" content="Mobile weather page for finding local weather and weather for great places.">
     <meta name="viewport" content="width=device-width">
@@ -14,14 +14,76 @@
             border: 1px solid;
             border-radius: 5px;
         }
+
+        h1 {
+            color: black;
+            font-size: 42px;
+            font-family: 'Sansita', sans-serif;
+        }
+
+        h2 {
+            color: black
+        }
+
+        h3 {
+            position: absolute;
+            top: 65px;
+            left: 350px;
+            font-family: 'Sansita', sans-serif;
+        }
+
+        body {
+            background-color: #A6D8DB;
+        }
+
+        ul {
+            height: 20px;
+            padding: 5px 0;
+            border: solid 1px black;
+            background-color: #F07C6C;
+            word-spacing: 120px;
+        }
+
+        td,
+        th {
+            border: solid 1px black;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        a:link {
+            color: #4A4653;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #4A4653;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #E7EF61;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #A6D8DB;
+            text-decoration: underline;
+        }
     </style>
 
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Sansita');
     </style>
+</head>
+
+
+<body>
     <header>
-        <img src="/WeatherApp/Images/logo-blue.jpg" alt='feeling lucky? logo' width='400' height='99'>
+        <img src="/WeatherApp/weatherplan/logo.png" alt='feeling lucky? logo' width='400' height='99'>
         <h3>Local Weather</h3>
 
         <nav>
@@ -39,6 +101,7 @@
 
     </header>
     <main>
+
         <table>
             <tr>
                 <th>Current Conditions<br><br>current</th>
@@ -48,78 +111,11 @@
 
 
         </table>
-
-
     </main>
-
-</head>
-
-<body>
-
     <footer>
         &copy;2017 Brady McFarland
-        <li><a href='index.html'>Home Page</a></li>
+        <u><a href='index.html'>Home Page</a></u>
     </footer>
 </body>
-<style type="text/css">
-    h1 {
-        color: black;
-        font-size: 42px;
-        font-family: 'Sansita', sans-serif;
-    }
-    
-    h2 {
-        color: black
-    }
-    
-    h3 {
-        position: absolute;
-        top: 65px;
-        left: 350px;
-        font-family: 'Sansita', sans-serif;
-    }
-    
-    body {
-        background-color: #A6D8DB;
-    }
-    
-    ul {
-        height: 20px;
-        padding: 5px 0;
-        border: solid 1px black;
-        background-color: #F07C6C;
-        word-spacing: 120px;
-    }
-    
-    td,
-    th {
-        border: solid 1px black;
-    }
-    
-    table {
-        border-collapse: collapse;
-    }
-</style>
-<style>
-    a:link {
-        color: #4A4653;
-        text-decoration: none;
-    }
-    
-    a:visited {
-        color: #4A4653;
-        text-decoration: underline;
-    }
-    
-    a:hover {
-        color: #E7EF61;
-        text-decoration: underline;
-    }
-    
-    a:active {
-        color: #A6D8DB;
-        text-decoration: underline;
-    }
-</style>
 
 </html>

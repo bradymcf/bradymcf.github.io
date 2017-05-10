@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://127.0.0.1:57785/samples/AfterTax.html -->
+<html data-brackets-id="8196" lang="en-us"><head data-brackets-id="8197"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title data-brackets-id="8198">My Amazing Title</title>
+        <meta data-brackets-id="8199" name="description" content="">
+        
+
+        
+        
+
+            
+                
+
+
+
+
+
+                <title data-brackets-id="8204">tax</title>
+                <script data-brackets-id="8205">
+
+                    function afterTax() {
+                        var pay = parseFloat(document.getElementById('pay').value);
+                        var hours = parseFloat(document.getElementById('hours').value);
+
+                        var tax = (pay * hours) - ((pay * hours) * 0.15) ;
+
+
+                        var output = 'Pay after tax ' + tax;
+                        document.getElementById('output').innerHTML = output;
+                    }
+
+                </script>
+            </head>
+
+            <body data-brackets-id="8206">
+                <h1 data-brackets-id="8207">Calculating taxes</h1>
+
+                please enter the hourly wage: <input data-brackets-id="8208" type="text" id="pay"><br data-brackets-id="8209"> please enter the number of hours worked: <input data-brackets-id="8210" type="text" id="hours"><br data-brackets-id="8211">
+                <button data-brackets-id="8212" type="button" onclick="afterTax()">Calculate Tax</button>
+                <div data-brackets-id="8213" id="output">Pay after tax 204</div>
+            
+
+        
+<div class="__brackets-ld-highlight" style="left: 8px; top: 118.875px; width: 86.3438px; height: 18px; z-index: 2000000; margin: 0px; padding: 0px; position: absolute; pointer-events: none; border-radius: 0px; border-style: solid; border-width: 1px; border-color: rgb(0, 162, 255); box-shadow: rgb(255, 255, 255) 0px 0px 1px; box-sizing: border-box; background-color: rgba(0, 162, 255, 0); opacity: 1;"></div></body></html>

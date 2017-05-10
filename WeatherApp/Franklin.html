@@ -7,8 +7,6 @@
     <meta name="description" content="Mobile weather page for weather in Franklin.">
     <meta name="viewport" content="width=device-width">
     <script type='text/javascript'>
-
-
     </script>
     <style>
         table {
@@ -24,35 +22,33 @@
             border-collapse: collapse;
             width: 100%;
         }
-        
+
         td,
         th {
             border: 1px solid #dddddd;
             text-align: left;
             padding: 8px;
         }
-        
+
         tr:nth-child(even) {
             background-color: #dddddd;
         }
-
     </style>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Sansita');
-
     </style>
     <header>
-        <heading><img src="/WeatherApp/Images/logo-blue.jpg" alt='feeling lucky? logo' width='400' height='99'>
-            <h3>Local Weather</h3>
-        </heading>
+        <div><img src="/WeatherApp/weatherplan/logo.png" alt='feeling lucky? logo' width='400' height='99'></div>
+        <h3>Local Weather</h3>
+
         <nav>
             <div>
                 <ul>
-                    <a href="/WeatherApp/mobileapp.html">Home</a>
-                    <a href="/WeatherApp/Franklin.html">Franklin</a>
-                    <a href='/WeatherApp/Greenville.html'>Greenville</a>
-                    <a href='/WeatherApp/Springfield.html'>Springfield</a>
-                    <a href="http://autocomplete.wunderground.com/aq?query=query">Search</a>
+                    <li><a href="/WeatherApp/mobileapp.html">Home</a></li>
+                    <li><a href="/WeatherApp/Franklin.html">Franklin</a></li>
+                    <li><a href='/WeatherApp/Greenville.html'>Greenville</a></li>
+                    <li><a href='/WeatherApp/Springfield.html'>Springfield</a></li>
+                    <li><a href="http://autocomplete.wunderground.com/aq?query=query">Search</a></li>
 
                 </ul>
             </div>
@@ -64,15 +60,39 @@
 
 <body>
     <main>
-        <table>
-            <tr>
-                <th>Current Conditions<br><br>current</th>
-                <th>Greenville<br><br>temp</th>
-                <th>Hourly Forecast<br><br>8am<br><br>12pm</th>
-            </tr>
-           
+        <div>
+            <table>
+                <tr>
+                    <th>Current Conditions<br><br>current</th>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Greenville<br><br>temp</th>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Current</th>
+                            </tr>
+                        </table>
+                    </div>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Hourly Forecast<br><br>8am<br><br>12pm</th>
+                </tr>
+            </table>
+        </div>
+
+
 
         </table>
+
 
     </main>
 
@@ -82,27 +102,27 @@
     </footer>
 </body>
 <style type="text/css">
-    h1 {
+h1 {
         color: black;
         font-size: 42px;
         font-family: 'Sansita', sans-serif;
     }
-    
+
     h2 {
         color: black
     }
-    
+
     h3 {
         position: absolute;
         top: 65px;
         left: 350px;
         font-family: 'Sansita', sans-serif;
     }
-    
+
     body {
         background-color: #A6D8DB;
     }
-    
+
     ul {
         height: 40px;
         padding: 0px 0;
@@ -110,38 +130,35 @@
         background-color: #F07C6C;
         word-spacing: 120px;
     }
-    
-    td,
-    th {
-        border: solid 1px black;
-    }
-    
-    table {
-        border-collapse: collapse;
-    }
-
+}
+td,
+th {
+    border: solid 1px black;
+}
+table {
+    border-collapse: collapse;
+}
 </style>
 <style>
     a:link {
         color: #4A4653;
         text-decoration: none;
     }
-    
+
     a:visited {
         color: #4A4653;
         text-decoration: underline;
     }
-    
+
     a:hover {
         color: #E7EF61;
         text-decoration: underline;
     }
-    
+
     a:active {
         color: #A6D8DB;
         text-decoration: underline;
     }
-
 </style>
 
 </html>
