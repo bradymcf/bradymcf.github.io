@@ -1,0 +1,16 @@
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.parent {
+    display: flex;
+    justify-content: space-around;
+}
+.child{
+    justify-content:space-around;
+}
+.header{
+    justify-content: center;
+}
