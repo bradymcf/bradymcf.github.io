@@ -20,16 +20,25 @@ justify-content:space-around;
     display: flex;
     position: fixed;
     bottom: 1px;
-    justify-content: space-between;
+   
+}
+.h2 {
+    display: flex;
+    justify-content: center;
+}
+.h3 {
+    justify-content: center;
+    
 }
 table {
-    display: flex;
+    
     background-color: rgba(200, 200, 200, .6);
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
     text-align: center;
 }
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -52,12 +61,13 @@ h1 {
     font-family: 'Sansita', sans-serif;
 }
 h2 {
-    color: black
+    color: black;
+    font-family: 'Sansita', sans-serif;
 }
 h3 {
     position: absolute;
-    top: 65px;
-    left: 350px;
+    top: 55px ;
+    left: 260px;
     font-family: 'Sansita', sans-serif;
 }
 body {
