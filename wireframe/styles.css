@@ -12,5 +12,16 @@
     justify-content:space-around;
 }
 .header{
+    display:flex;
     justify-content: center;
+}
+.nav > ul{
+    display: flex;
+    justify-content: center;
+
+}
+.img > div{
+    display: flex;
+    justify-content: center;
+    position: absolute;
 }
