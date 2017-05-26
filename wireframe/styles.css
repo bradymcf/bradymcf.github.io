@@ -1,26 +1,40 @@
-.flex {
+.content {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
 }
+
 .parent {
     display: flex;
     justify-content: space-around;
 }
-.child{
-    justify-content:space-around;
-}
-.header{
+
+.slider {
+    width: 100%;
+    height: 100px;
+    background-color: grey;
     display:flex;
+    flex-wrap:wrap;
     justify-content: center;
 }
-.nav > ul{
+.header {
     display: flex;
     justify-content: center;
-
+    flex-wrap:wrap;
 }
-.img > div{
+.header nav {
+    display:flex;
+    flex-direction: row;
+}
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 1em;
+}
+
+.img div {
     display: flex;
     justify-content: center;
     position: absolute;
